@@ -8,6 +8,8 @@ html, body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    max-width: 800px;
+    margin: auto;
 }
 
 
@@ -15,8 +17,9 @@ html, body {
 .menu {
     list-style: none;
     border-bottom: 0.1em solid black;
-    margin-bottom: 2em;
-    padding: 0 0 0.5em;
+    margin-bottom: 10px;
+    min-height: 30px;
+
 }
 
 .menu:before {
@@ -55,14 +58,15 @@ div.view {
 }
 
 .content {
-    flex-grow: 1;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .postLink {
-    flex-grow: 1    ;
+    flex-grow: 1;
     text-align: center;
     cursor: pointer;
     border: solid rgb(68, 68, 68) 1px;
@@ -71,7 +75,7 @@ div.view {
     border-radius: 9px;
     box-shadow: black 0 0 10px;
     transition: box-shadow .3s;
-    margin: 10px 0;
+    margin: 10px;
     display: flex;
 }
 .postLink h2{
@@ -85,11 +89,17 @@ div.view {
 
 footer {
     padding: 10px;
-    text-align: center;
+   justify-content: center;
     display: flex;
+    min-height: 30px;
 }
-
+.field{
+    margin-bottom: 10px;
+}
 footer button {
     flex-grow: 1;
 
+}
+button {
+    max-width: 25%;
 }
