@@ -1,0 +1,95 @@
+/* app css stylesheet */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #222222;
+    color: rgb(215, 27, 27);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+div.view {
+    padding: 0 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.postLink {
+    flex-grow: 1    ;
+    text-align: center;
+    cursor: pointer;
+    border: solid rgb(68, 68, 68) 1px;
+    background-color: #2F2F2F;
+    padding: 5px;
+    border-radius: 9px;
+    box-shadow: black 0 0 10px;
+    transition: box-shadow .3s;
+    margin: 10px 0;
+    display: flex;
+}
+.postLink h2{
+    padding: 5px;
+    margin: auto;
+}
+
+.postLink:hover {
+    box-shadow: red 0 0 15px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+
+footer button {
+    flex-grow: 1;
+
+}
