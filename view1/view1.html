@@ -1,0 +1,13 @@
+<div class="container">
+    <h1>News feed</h1>
+
+    <div class="content">
+        <div ng-repeat="item in news" class="postLink" ng-click="goto('/view3/'+item.$id)">
+            <h2  ng-bind="item.title" ></h2>
+        </div>
+    </div>
+    <footer>
+        <button ng-click="decreaseStartIndex()">Previous</button>
+        <button ng-click="increaseStartIndex()">Next</button>
+    </footer>
+</div>

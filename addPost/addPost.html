@@ -1,0 +1,6 @@
+<h1>Add post</h1>
+<input ng-model="title" placeholder="Enter title" class="field" type="text" required>
+<br/>
+<textarea ng-model="content" minlength="1" maxlength="200" cols="50" rows="5" required placeholder="Enter your text"></textarea>
+<p ng-bind="mssg" class="mssg"></p>
+<button ng-click="sendPost()">Send post</button>
